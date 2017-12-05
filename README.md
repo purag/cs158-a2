@@ -44,4 +44,4 @@ Same as **Model 2**, but the similarity score for this model included both the a
 Same as **Model 9**, but instead of using all the user's tags in the similarity calculation, we only used the top tags by frequency (like in **Model 3**). We got the best performance on the validation set when using the top 22 tags.
 
 ### Model 11, acc ~ 81%
-Same as **Model 2**, but for the similarity calculation, instead of using all of the artists from each user, we used the artists with the top `n` listens for each user. We found that `n = 21` gave the best performance on the validation set.
+Same as **Model 2**, but for the similarity calculation, instead of using all of the artists from each user, we used the top `n` artists by listens for each user. We found that `n = 21` gave the best performance on the validation set.
