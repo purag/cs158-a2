@@ -1,15 +1,15 @@
 # CSE 158 Assignment 2
 For our assignment, we used the "hetrec" last.fm dataset.
 
+## Baseline Model, acc ~ 57%
+Return true if this artist is one of the top 50 artists in our training set.
+
 ## Models
 All of the models differ only in the fourth case (the `else`) of the if statement in `m*_predict`. This is the case in which we have seen a user and an artist in training, but have not seen a prior listen between them. Each of the descriptions below will only discuss that case.
 
 All of the models take as input a `userID` (as `uid`) and an `artistID` (as `aid`).
 
 Below, `acc` refers to the best accuracy we found on the validation set (by tuning the hyperparameters).
-
-### Baseline, acc ~ 57%
-Return true if this artist is one of the top 50 artists in our training set.
 
 ### Model 1, acc ~ 68%
 Return true if any of this user's friends have listened to this artist.
